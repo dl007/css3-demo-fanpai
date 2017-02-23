@@ -9,6 +9,7 @@
 		   height: 500px;
            margin: 30px auto;
            -wekit-perspective: 500px;
+
 	
 				/*
 		  perspective:景深;为父元素设置，使其子元素获得透视效果，他只影响3d转换元素；

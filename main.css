@@ -5,9 +5,9 @@
 		}
 		.out{
 		   position: relative;
-		   width: 300px;
-		   height: 500px;
-           margin: 30px auto;
+		   width: 100px;
+		   height: 100px;
+           margin: 3px auto;
            perspective: 500px;
 	
 				/*

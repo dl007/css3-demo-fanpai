@@ -1,0 +1,45 @@
+	*{
+			margin:0;
+			padding: 0;
+
+		}
+		.out{
+		   position: relative;
+		   width: 300px;
+		   height: 500px;
+           margin: 30px auto;
+           perspective: 500px;
+	
+				/*
+		  perspective:景深;为父元素设置，使其子元素获得透视效果，他只影响3d转换元素；
+		  值越小，物体离我们越近，
+		          一般推荐使用500px-800px；
+		 
+
+		 */
+		}
+		.pai{
+			transform-style: preserve-3d;
+            background-color: yellow;
+		}
+		.pai,.box,.box2{
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			transition: 2.5s;
+		}
+		.box{
+	        background: url(a.jpg) center center /cover no-repeat;
+		    transform:translateZ(10px);
+		}
+		.box2{
+		   background: url(b.jpg) center center /cover no-repeat; 
+		   transform:translateZ(-10px) rotateY(180deg);
+		   
+		}
+		.out:hover .pai{
+			transform: rotateY(180deg);
+		    
+		}
